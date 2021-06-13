@@ -1,0 +1,22 @@
+.swiper-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: #FBAE3A;
+
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 7vw;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FBAE3A;
+}
+
+.swiper-slide-thumb-active {
+    background: rgba(0, 0, 0, .5) ;
+}

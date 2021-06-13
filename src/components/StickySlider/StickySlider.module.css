@@ -1,0 +1,99 @@
+
+.wrapperSlider {
+    position: relative;
+    height: 90vh;
+    background: black;
+
+}
+
+.sliderBlackout {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.contentWrap {
+    height: 65vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mySwiper {
+    position: absolute;
+    bottom: 0;
+    background: rgba(93, 57, 2, .5) ;
+}
+
+.mainSwiper {
+    height: 100%;
+    padding: 0;
+    position: absolute;
+
+}
+
+.sliderButton {
+    border: #282c34 2px solid;
+    cursor: pointer;
+
+}
+
+.sliderButtonActive {
+    border: green 2px solid;
+    cursor: pointer;
+
+}
+.slideSticky {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    position: relative;
+    height: 100%;
+}
+
+
+.slideSticky h3 {
+    position: relative;
+    bottom: -7vw;
+    color: white;
+    width: 86vw;
+    margin: 0 auto 5vw;
+}
+
+.list {
+    font-family: 'OpenSans-Regular', serif;
+    text-align: left;
+    position: relative;
+    color: #FBAD3A;
+    font-size: 5vw;
+    width: 86vw;
+    margin: 10px 0 0 ;
+    z-index: 1;
+    top: 2vw;
+}
+.list li {
+    margin-bottom: 10px;
+}
+.listMarkersColor {
+    color: white;
+}
+.svgWrap {
+    padding-top: 10px;
+    height: 30vw;
+}
+.svg {
+    height: 17vw;
+    width: 17vw;
+}
+.subTitle,
+.description {
+    font-size: 4vw;
+    color: #FDD9A4;
+    margin: 0;
+}
+.description {
+    z-index: 1;
+}

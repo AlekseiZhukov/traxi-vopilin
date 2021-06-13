@@ -1,0 +1,36 @@
+.svg {
+    width: 9vw;
+    height: 9vw;
+}
+.sectionWrap {
+    margin: 3vw 0 0;
+
+}
+.sectionWrap,
+.sectionBox,
+.textWrap {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    justify-content: space-between;
+    color: #FDD9A4;
+    text-align: left;
+}
+
+.sectionBox {
+    width: 46%;
+    padding: 1vw;
+    flex-flow: row nowrap;
+    margin-top: 3vw;
+
+}
+.textWrap {
+    flex-flow: column nowrap;
+    width: 78%;
+}
+.textWrap p {
+    margin-top: 2vw;
+
+    color: white;
+    font-size: 4vw;
+}

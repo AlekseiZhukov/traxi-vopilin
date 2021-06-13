@@ -1,0 +1,101 @@
+
+.wrapperSlider {
+    position: relative;
+    height: 100vh;
+
+
+}
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -112px;
+}
+
+.sliderBlackout {
+    position: absolute;
+    background: rgba(93, 57, 2, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -10px;
+
+}
+.contentWrap {
+    height: 97%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.mySwiper {
+    position: absolute;
+    bottom: 0;
+    background: rgba(93, 57, 2, .5) ;
+}
+
+.mainSwiper {
+    height: 100%;
+    padding: 0;
+    position: absolute;
+
+}
+
+
+.slideSticky {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    position: relative;
+    height: 100%;
+}
+
+
+.slideSticky h3 {
+    position: absolute;
+    color: white;
+    width: 86vw;
+    top: 6vw;
+}
+.slideSticky p {
+    width: 86vw;
+    font-size: 4vw;
+}
+
+.list {
+    font-family: 'OpenSans-Regular', serif;
+    text-align: left;
+    position: absolute;
+    top: 27vw;
+    color: #FBAD3A;
+    font-size: 5vw;
+    width: 80vw;
+    margin: 1vw 0 0 ;
+    z-index: 1;
+
+}
+.list li {
+    margin-bottom: 4vw;
+
+}
+.listMarkersColor {
+    color: white;
+}
+
+.image {
+    position: absolute;
+    bottom: 21vw;
+    height: auto;
+    width: 100vw;
+}
+.subTitle,
+.description {
+    font-size: 4vw;
+    color: #FDD9A4;
+    margin: 0;
+}
+.description {
+    position: absolute;
+    bottom: 11vw;
+}

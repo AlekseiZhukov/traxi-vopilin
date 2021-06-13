@@ -1,0 +1,117 @@
+.header {
+    background-color: #FBAE3A;
+    height: 10vh;
+
+}
+
+.headerWrapper {
+    height: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
+}
+.statusLogo {
+    width: 100px;
+    height: auto;
+    margin: 1.5vw 0;
+}
+.statusLogoDesktop {
+    width: 15vw;
+
+}
+
+.headerBox {
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+.heder-heading {
+    color:black;
+    margin: 0;
+    font-size: 3vw;
+}
+
+.heder-heading_word {
+    color: #FBAD3A;
+}
+
+
+.headerTel  {
+    text-decoration: none;
+    color: black;
+    font-family: 'Vollkorn-Bold', sans-serif;
+    font-size: 7vw;
+    position: relative;
+}
+
+.headerTelDesktop  {
+    font-size: 5vw;
+}
+
+.headerTelDesktop::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -.5vw;
+    height: 1px;
+    width: 1%;
+    background: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: opacity, width ease-in-out 0.25s;
+}
+.headerTelDesktop:hover::after {
+     width: 100%;
+     opacity: 1;
+
+}
+
+
+
+
+
+.nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: .5vw;
+}
+
+.nav li {
+    display: inline;
+    color: #FBAD3A;
+    list-style-type: none;
+    border-bottom: 1px solid #FBAD3A;
+    transition: border-bottom .2s linear 0.2s;
+}
+
+.nav li:hover {
+    border-bottom: 1px solid white;
+    transition: border-bottom .2s linear 0.2s;
+}
+
+.heder-heading_link {
+    text-decoration: none;
+    color: #FBAD3A;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .2s linear 0.2s;
+}
+
+.heder-heading_link:hover {
+    color: white;
+    transition: color .2s linear 0.2s;
+}
