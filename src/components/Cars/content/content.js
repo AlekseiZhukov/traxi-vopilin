@@ -31,7 +31,7 @@ export const  content = [
         img: car2,
     },
     {   id: 3,
-        title: "TOYOTA CAMRY V70",
+        title: "TOYOTA Camry V70",
         services: [
             'от 750руб. в час или 40руб. за километр',
             'при посадке, ожидание до 10мин бесплатно',
@@ -42,7 +42,7 @@ export const  content = [
         img: car3,
     },
     {   id: 4,
-        title: "TOYOTA CAMRY V55",
+        title: "TOYOTA Camry V55",
         services: [
             'от 750руб. в час или 40руб. за километр',
             'при посадке, ожидание до 10мин бесплатно',
@@ -53,7 +53,7 @@ export const  content = [
         img: car4,
     },
     {   id: 5,
-        title: "MERCEDES SPRINTER",
+        title: "MERCEDES Sprinter",
         services: [
             'от 750руб. в час или 40руб. за километр',
             'при посадке, ожидание до 10мин бесплатно',
@@ -64,7 +64,7 @@ export const  content = [
         img: car5,
     },
     {   id: 6,
-        title: "VW MULTIVAN",
+        title: "VOLKSWAGEN Multivan",
         services: [
             'от 750руб. в час или 40руб. за километр',
             'при посадке, ожидание до 10мин бесплатно',
