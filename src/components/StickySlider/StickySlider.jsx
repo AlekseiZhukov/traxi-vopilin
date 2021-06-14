@@ -1,15 +1,14 @@
 import React, {useState}from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Thumbs, A11y,  Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Thumbs, A11y} from 'swiper';
 import 'swiper/swiper-bundle.css'
-
 import {content} from "./content/content";
 import css from './StickySlider.module.css'
 import './swiper-bundle-castom.css'
 import 'swiper/components/thumbs/thumbs.min.css'
 
 
-SwiperCore.use([Navigation, Thumbs, A11y, Autoplay])
+SwiperCore.use([Navigation, Thumbs, A11y])
 
 const StickySlider = () => {
 
@@ -18,10 +17,6 @@ const StickySlider = () => {
     return (
         <div className={css.wrapperSlider}>
         <Swiper
-            autoplay={ {
-                delay: 3000,
-                disableOnInteraction: true,
-            }}
             loop
             centeredSlides
             spaceBetween={10}

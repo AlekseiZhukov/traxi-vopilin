@@ -1,29 +1,21 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Navigation, Parallax, Pagination, A11y,  Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Parallax, Pagination, A11y} from 'swiper';
 import 'swiper/swiper-bundle.css'
 
 import {content} from "./content/content";
 import css from './Cars.module.css'
-// import './swiper-bundle-castom.css'
-// import "swiper/components/pagination/pagination.min.css"
-// import "swiper/components/navigation/navigation.min.css"
 import background from './assets/carsSlider.jpg'
 
 
-SwiperCore.use([Navigation, Parallax, A11y, Autoplay, Pagination])
+SwiperCore.use([Navigation, Parallax, A11y, Pagination])
 
 const CarsSlider = () => {
 
     return (
         <div className={css.wrapperSlider}>
             <Swiper
-                /*autoplay={ {
-                    delay: 3000,
-                    disableOnInteraction: true,
-                }}*/
                 loop
-
                 parallax
                 spaceBetween={10}
                 navigation
