@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import StickySlider from "./components/StickySlider/StickySlider";
 import Header from "./components/Header/Header";

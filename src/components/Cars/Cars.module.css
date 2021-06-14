@@ -46,7 +46,7 @@
 .slideSticky {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: start;
+    justify-content: flex-start;
     position: relative;
     height: 100%;
 }

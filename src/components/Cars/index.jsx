@@ -32,7 +32,7 @@ const CarsSlider = () => {
                 }}
                 className={css.mainSwiper}
             >
-                <div slot="container-start" className={css.parallax} style={{'background-image': `url(${background})`, 'background-size': 'cover'}} data-swiper-parallax="-23%" />
+                <div slot="container-start" className={css.parallax} style={{backgroundImage: `url(${background})`, backgroundSize: 'cover'}} data-swiper-parallax="-23%" />
                 {content.map(item => <SwiperSlide key={item.id}>
 
                     <div  className={css.slideSticky} >

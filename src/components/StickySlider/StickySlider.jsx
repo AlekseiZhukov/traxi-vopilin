@@ -30,7 +30,7 @@ const StickySlider = () => {
             >
             {content.map(item => <SwiperSlide key={item.id}>
 
-                <div  style={{background: `url(${item.image}) no-repeat center center`, 'background-size': 'cover'}} className={css.slideSticky} >
+                <div  style={{background: `url(${item.image}) no-repeat center center`, backgroundSize: 'cover'}} className={css.slideSticky} >
                     <div className={css.sliderBlackout} />
                     <div className={css.contentWrap}>
                         <h3>{item.title}</h3>
