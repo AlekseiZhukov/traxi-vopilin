@@ -4,48 +4,53 @@ import cn from 'classnames'
 import css from './Header.module.css'
 import logo from './assets/status_logo.svg'
 
-//import { Link } from 'react-router-dom'
 
-const Header = () => {
-
-	// const isMobile = useMediaQuery({ query: '(max-device-width: 576px)' })
-	const isNotMobile = useMediaQuery({ query: '(min-width: 577px)' })
+const Header = ({...props}) => {
+	const {conditionOn} = {...props}
+	const isDesktop = useMediaQuery({minWidth: 577, maxWidth: 1280})
+	const isBigDesktop = useMediaQuery({minWidth: 1280})
 
 		return (
-			<div className={css.header}>
+			<div className={cn(css.header ,{
+				[css.headerDesktop]:isDesktop
+			})}>
 				<div className={css.headerWrapper}>
 					<div className={css.headerBox}>
 
 						    <img src={logo}  alt={'logo'} className={cn (css.statusLogo, {
-						    	[css.statusLogoDesktop] : isNotMobile
+						    	[css.statusLogoDesktop] : isDesktop | isBigDesktop,
 						    })}/>
 
 
-                        {isNotMobile ? <div className='nav-box'>
+                        {isDesktop || isBigDesktop ? <div className={css.navBox}>
 
-							<ul className='nav'>
+							<ul className={css.nav}>
 								<li>
-									<a className='heder-heading_link' href='#cars'>
-										тарифы и автомобили
+									<a className={css.headerHeadingLink} href='#cars'>
+										автомобили
 									</a>
 								</li>
 
 								<li>
-									<span className='heder-heading_link' >
+									<span className={css.headerHeadingLink} onClick={conditionOn}>
 										правила
 									</span>
 								</li>
 								<li>
-									<a className='heder-heading_link' href='#section6'>
+									<a className={css.headerHeadingLink} href='#section6'>
 										контакты
 									</a>
 								</li>
 							</ul>
 						</div> : null}
 
-							<div ><a className={cn(css.headerTel ,{
-								[css.headerTelDesktop]:isNotMobile
-							})} href="tel:+78314159989">+7 (831) 415 99 89</a></div>
+							<div >
+								<a className={cn(css.headerTel ,{
+								[css.headerTelDesktop]:isDesktop,
+								[css.headerTelBigDesktop]: isBigDesktop
+							})} href="tel:+78314159989">+7 (831) 415 99 89</a>
+								{!isDesktop && !isBigDesktop? <div className={css.conditions} onClick={conditionOn}>правила пользования такси</div> : null}
+							</div>
 
 
 					</div>

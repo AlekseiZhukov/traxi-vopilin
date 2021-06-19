@@ -1,6 +1,10 @@
 .header {
     background-color: #FBAE3A;
-    height: 10vh;
+    height: 11vh;
+}
+.headerDesktop {
+    padding: 0;
+    height: 8vw;
 
 }
 
@@ -15,8 +19,7 @@
     margin: 1.5vw 0;
 }
 .statusLogoDesktop {
-    width: 15vw;
-
+    width: 13vw;
 }
 
 .headerBox {
@@ -28,19 +31,6 @@
 
 }
 
-
-
-.heder-heading {
-    color:black;
-    margin: 0;
-    font-size: 3vw;
-}
-
-.heder-heading_word {
-    color: #FBAD3A;
-}
-
-
 .headerTel  {
     text-decoration: none;
     color: black;
@@ -48,16 +38,26 @@
     font-size: 7vw;
     position: relative;
 }
-
-.headerTelDesktop  {
-    font-size: 5vw;
+.conditions {
+    font-size: 4vw;
+    text-decoration: underline;
+    position: relative;
+    bottom: 1.4vw;
 }
 
+.headerTelDesktop  {
+    font-size: 4.5vw;
+}
+.headerTelBigDesktop {
+    font-size: 3.5vw;
+
+}
+.headerTelBigDesktop::after,
 .headerTelDesktop::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: -.5vw;
+    bottom: 2px;
     height: 1px;
     width: 1%;
     background: black;
@@ -68,15 +68,18 @@
     transform: translate(-50%, 0);
     transition: opacity, width ease-in-out 0.25s;
 }
+.headerTelBigDesktop:hover::after,
 .headerTelDesktop:hover::after {
      width: 100%;
      opacity: 1;
-
 }
-
-
-
-
+.navBox {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+}
 
 .nav {
     margin: 0;
@@ -85,33 +88,43 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-
-    margin-bottom: .5vw;
+    width: 95%;
 }
 
 .nav li {
     display: inline;
     color: #FBAD3A;
     list-style-type: none;
-    border-bottom: 1px solid #FBAD3A;
-    transition: border-bottom .2s linear 0.2s;
+
 }
 
-.nav li:hover {
-    border-bottom: 1px solid white;
-    transition: border-bottom .2s linear 0.2s;
-}
 
-.heder-heading_link {
+
+.headerHeadingLink {
+    position: relative;
     text-decoration: none;
-    color: #FBAD3A;
-    font-size: 1.5vw;
-    text-transform: uppercase;
+    color: black;
+    font-size: 2vw;
     cursor: pointer;
     transition: color .2s linear 0.2s;
 }
+.headerHeadingLink::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    height: 0.5px;
+    width: 1%;
+    background: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: opacity, width ease-in-out 0.25s;
+}
 
-.heder-heading_link:hover {
-    color: white;
-    transition: color .2s linear 0.2s;
+.headerHeadingLink:hover::after {
+    width: 100%;
+    opacity: 1;
 }

@@ -1,16 +1,19 @@
+.mainSwiper {
+    height: 100%;
+    padding: 0;
 
+}
 .wrapperSlider {
     position: relative;
     height: 100vh;
-
-
 }
+
 .parallax {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: -112px;
+    right: -30vw;
 }
 
 .sliderBlackout {
@@ -29,19 +32,6 @@
     align-items: center;
     justify-content: space-around;
 }
-.mySwiper {
-    position: absolute;
-    bottom: 0;
-    background: rgba(93, 57, 2, .5) ;
-}
-
-.mainSwiper {
-    height: 100%;
-    padding: 0;
-    position: absolute;
-
-}
-
 
 .slideSticky {
     display: flex;
@@ -58,26 +48,51 @@
     width: 86vw;
     top: 6vw;
 }
+.slideStickyDesktop h3 {
+    font-size: 3vw;
+}
+.slideStickyBigDesktop h3 {
+    font-size: 2vw;
+    top: 4vw;
+}
 .slideSticky p {
     width: 86vw;
     font-size: 4vw;
 }
-
+.slideStickyDesktop p {
+    font-size: 1.7vw;
+    bottom: 4vw;
+}
+.slideStickyBigDesktop p {
+    font-size: 1.2vw;
+}
 .list {
     font-family: 'OpenSans-Regular', serif;
     text-align: left;
     position: absolute;
     top: 27vw;
     color: #FBAD3A;
-    font-size: 5vw;
+    font-size: 4vw;
     width: 80vw;
     margin: 1vw 0 0 ;
     z-index: 1;
 
 }
+.listDesktop {
+    top: 12vw;
+    font-size: 2vw;
+}
+.listBigDesktop {
+    font-size: 1.5vw;
+    width: 37vw;
+    left: 5vw;
+}
 .list li {
     margin-bottom: 4vw;
 
+}
+.listDesktop li {
+    margin-bottom: 1vw;
 }
 .listMarkersColor {
     color: white;
@@ -85,9 +100,17 @@
 
 .image {
     position: absolute;
-    bottom: 21vw;
+    bottom: 27vw;
     height: auto;
     width: 100vw;
+}
+.imageDesktop {
+    width: 65vw;
+    bottom: 6vw;
+}
+.imageBigDesktop {
+    width: 56vw;
+    right: 3vw;
 }
 .subTitle,
 .description {

@@ -5,7 +5,9 @@
     background: black;
 
 }
-
+.wrapperSliderDesktop {
+    height: 88vh;
+}
 .sliderBlackout {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
@@ -22,9 +24,14 @@
     align-items: center;
     justify-content: space-around;
 }
+.contentWrapDesktop {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 70vh;
+    justify-content: flex-start;
+}
+
 .mySwiper {
-    position: absolute;
-    bottom: 0;
     background: rgba(93, 57, 2, .5) ;
 }
 
@@ -35,17 +42,6 @@
 
 }
 
-.sliderButton {
-    border: #282c34 2px solid;
-    cursor: pointer;
-
-}
-
-.sliderButtonActive {
-    border: green 2px solid;
-    cursor: pointer;
-
-}
 .slideSticky {
     display: flex;
     flex-flow: column nowrap;
@@ -54,13 +50,22 @@
     height: 100%;
 }
 
-
-.slideSticky h3 {
+.slideStickyH3 {
     position: relative;
+    font-size: 25px;
     bottom: -7vw;
+    width: 80%;
     color: white;
-    width: 86vw;
     margin: 0 auto 5vw;
+}
+.slideStickyH3Desktop {
+    font-size: 3vw;
+    bottom: -2vw;
+    margin: 0 auto 1vw;
+}
+.slideStickyH3BigDesktop {
+    font-size: 2vw;
+
 }
 
 .list {
@@ -68,32 +73,53 @@
     text-align: left;
     position: relative;
     color: #FBAD3A;
-    font-size: 5vw;
-    width: 86vw;
+    font-size: 16px;
     margin: 10px 0 0 ;
     z-index: 1;
     top: 2vw;
 }
-.list li {
+.listDesktop {
+    width: 45vw;
+    font-size: 2vw;
+}
+.listBigDesktop {
+   font-size: 1.5vw;
+}
+
+.listLi {
     margin-bottom: 10px;
+}
+.listLiDesktop {
+    margin-bottom: 20px;
 }
 .listMarkersColor {
     color: white;
 }
 .svgWrap {
-    padding-top: 10px;
-    height: 30vw;
+    padding-top: 1vw;
+    height: 110px;
+    cursor: pointer;
+}
+
+.svgWrapDesktop {
+    height: 10vw;
 }
 .svg {
-    height: 17vw;
-    width: 17vw;
+    height: 14vw;
+    width: auto;
+}
+.svgDesktop {
+    height: 7vw;
 }
 .subTitle,
 .description {
-    font-size: 4vw;
+    font-size: 13px;
     color: #FDD9A4;
     margin: 0;
 }
 .description {
     z-index: 1;
+}
+.descriptionDesktop {
+    margin-top: 40px;
 }

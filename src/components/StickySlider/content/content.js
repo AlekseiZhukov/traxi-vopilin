@@ -1,14 +1,11 @@
-/*import photo1 from '../../../../assets/img/phot01.jpg'
-import photo2 from '../../../../assets/img/phot02.jpg'
-import photo3 from '../../../../assets/img/phot03.jpg'
-import photo4 from '../../../../assets/img/phot04.jpg'
-import photo5 from '../../../../assets/img/phot05.jpg'
-import photo6 from '../../../../assets/img/phot06.jpg'*/
-
 import photo1 from '../assets/transfer.jpg'
+import photo1Big from '../assets/transferBig.jpg'
 import photo4 from '../assets/delivery.jpg'
+import photo4Big from '../assets/deliveryBig.jpg'
 import photo2 from '../assets/bizness.jpg'
+import photo2Big from '../assets/biznessBig.jpg'
 import photo3 from '../assets/soberDriver.jpg'
+import photo3Big from '../assets/soberDriverBig.jpg'
 import transfer from '../assets/transfer.svg'
 import delivery from '../assets/box.svg'
 import bizness from '../assets/bizness.svg'
@@ -18,6 +15,7 @@ export const  content = [
     {   id: 1,
         title: "Трансфер из аэропорта и ж/д вокзала",
         image: photo1,
+        imageBig: photo1Big,
         services: [
             'ожидание в аэропорту до 60 мин',
             'ожидание на Ж/Д вокзале до 30 минут',
@@ -40,6 +38,7 @@ export const  content = [
             'наличный и безналичный расчет'
         ],
         image: photo2,
+        imageBig: photo2Big,
         subTitle: 'бизнесс-класс',
         svg: bizness,
     },
@@ -52,12 +51,14 @@ export const  content = [
             'услуга предоставляется и в случае ограниченной страховки'
         ],
         image: photo3,
+        imageBig: photo3Big,
         subTitle: 'трезвый водитель',
         svg: driver,
     },
     {   id: 4,
         title: "Курьерская доставка",
         image: photo4,
+        imageBig: photo4Big,
         services: [
             'быстрее и надежнее, чем экспресс-почтой',
             'гарантия сохранности груза',

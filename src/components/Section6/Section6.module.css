@@ -9,6 +9,10 @@
     text-align: center;
     margin: 0;
 }
+.section6WrapperBoxDesktop h4 {
+    font-size: 3vw;
+    margin-top: 1vw;
+}
 
 .section6Wrapper {
     max-width: 90vw;
@@ -24,6 +28,9 @@
     color: white;
     padding: 0;
 }
+.section6WrapperBoxDesktop ul{
+    font-size: 1.7vw;
+}
 .section6WrapperBox ul li {
 list-style-type: none;
     margin: 2px;
@@ -35,11 +42,19 @@ list-style-type: none;
     border-radius: 5px;
     margin: 5px auto;
 }
+.section6FrameDesktop {
+    width: 70vw;
+    height: 20vw;
+    margin-bottom: 3vw;
+}
 .headerTel {
     color: white;
     font-size: 24px;
     font-weight: lighter;
     margin: 10px 0 0;
+}
+.headerTelDesktop {
+    font-size: 3vw;
 }
 .headerTel a {
     text-decoration: none;
@@ -53,5 +68,14 @@ list-style-type: none;
     display: inline-block;
     width: 30px;
     height: 30px;
+    vertical-align: middle;
+}
+.headerTelDesktop::before {
+    content: "";
+    background: url(../Header/assets/tel.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 3vw;
+    height: 3vw;
     vertical-align: middle;
 }

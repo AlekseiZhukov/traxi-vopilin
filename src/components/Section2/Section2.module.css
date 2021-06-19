@@ -2,9 +2,15 @@
     width: 9vw;
     height: 9vw;
 }
+.svgDesktop {
+    width: 4vw;
+    height: 4vw;
+}
 .sectionWrap {
     margin: 3vw 0 0;
-
+}
+.sectionWrapDesktop {
+    margin: 0;
 }
 .sectionWrap,
 .sectionBox,
@@ -19,10 +25,14 @@
 
 .sectionBox {
     width: 46%;
-    padding: 1vw;
+    padding: 2vw .5vw 1vw .5vw;
     flex-flow: row nowrap;
     margin-top: 3vw;
 
+}
+.sectionBoxDesktop {
+    width: 21%;
+    margin: 0;
 }
 .textWrap {
     flex-flow: column nowrap;
@@ -30,7 +40,13 @@
 }
 .textWrap p {
     margin-top: 2vw;
-
     color: white;
     font-size: 4vw;
+}
+.textWrapDesktop p {
+    font-size: 1.7vw;
+}
+.textWrapDesktop h4 {
+    font-size: 1.7vw;
+    height: 45px;
 }

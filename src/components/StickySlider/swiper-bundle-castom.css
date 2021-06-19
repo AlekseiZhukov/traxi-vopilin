@@ -1,6 +1,6 @@
-.swiper-container {
-    width: 100%;
-    overflow: hidden;
+.swiper-container-thumbs {
+    position: absolute;
+    bottom: 0;
 }
 
 .swiper-button-prev,
